@@ -17,7 +17,12 @@ export default function Calculator() {
       <h1 className="text-2xl font-bold mb-4">Calculator to predict in-hospital mortality in patients with cirrhosis admitted with acute upper gastrointestinal bleeding</h1>
       <h2 className="text-xl font-bold mb-4">Probability Calculator</h2>
       <div className="mb-2">
-        <label className="block">Systolic blood pressure at admission:</label>
+        <label className="block">
+  Systolic blood pressure at admission:
+  <span className="block text-xs italic text-gray-500 mt-1">
+    Measured in mmHg
+  </span>
+</label>
         <input type="number" value={sbp} onChange={(e) => setSbp(Number(e.target.value))} className="border p-2 w-full" />
       </div>
       <div className="mb-2">
