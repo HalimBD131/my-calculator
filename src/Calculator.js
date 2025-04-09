@@ -26,11 +26,19 @@ export default function Calculator() {
         <input type="number" value={sbp} onChange={(e) => setSbp(Number(e.target.value))} className="border p-2 w-full" />
       </div>
       <div className="mb-2">
-        <label className="block">ALT at admission:</label>
+        <label className="block">
+  ALT at admission:
+  <span className="block text-xs italic text-gray-500 mt-1">
+    accepted range 6-515
+  </span>
         <input type="number" value={alt} onChange={(e) => setAlt(Number(e.target.value))} className="border p-2 w-full" />
       </div>
       <div className="mb-2">
-        <label className="block">MELD-Na at admission:</label>
+        <label className="block">
+  MELD-Na at admission:
+  <span className="block text-xs italic text-gray-500 mt-1">
+    accepted range 6-40
+  </span>
         <input type="number" value={meldNa} onChange={(e) => setMeldNa(Number(e.target.value))} className="border p-2 w-full" />
       </div>
       <button onClick={calculate} className="bg-blue-500 text-white px-4 py-2 rounded">Calculate</button>
