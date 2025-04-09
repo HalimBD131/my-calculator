@@ -20,7 +20,7 @@ export default function Calculator() {
         <label className="block">
   Systolic blood pressure at admission:
   <span className="block text-xs italic text-gray-500 mt-1">
-    Measured in mmHg
+    accepted range 59-197 mmHg
   </span>
 </label>
         <input type="number" value={sbp} onChange={(e) => setSbp(Number(e.target.value))} className="border p-2 w-full" />
